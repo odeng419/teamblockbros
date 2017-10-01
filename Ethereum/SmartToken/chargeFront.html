@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script type="text/javascript" src="web3js_path.js"></script>
+
+   <script type="text/javascript">  if(typeof window.web3 !== "undefined" && typeof window.web3.currentProvider !== "undefined") {
+        var web3 = new Web3(window.web3.currentProvider);
+      } else {
+        var web3 = new Web3();
+      }
+  </script>
+  <script src=“apptest.js”></script>
   <title>Ethereum Blockchain IOT DApp</title>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' 
 
