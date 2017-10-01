@@ -36,7 +36,7 @@ function sendFunds(buyerAddress, ticketPrice) {
 
 window.onload = function() {
 
-	web3.eth.getAccounts(function(err, accs) {
+	/*web3.eth.getAccounts(function(err, accs) {
     if (err != null) {
       alert("There was an error fetching your accounts.");
       return;
@@ -49,7 +49,7 @@ window.onload = function() {
     account = accounts[0];
 
   	//initializeConference();
-  });
+  });*/
 
 	// Wire up the UI elements
 
@@ -60,7 +60,7 @@ window.onload = function() {
 	});
 
 	// Set value of wallet to accounts[1]
-	$("#buyerAddress").val(accounts[1]);
-	$("#refBuyerAddress").val(accounts[1]);
+	//$("#buyerAddress").val(accounts[1]);
+	//$("#refBuyerAddress").val(accounts[1]);
 
 };
