@@ -1,0 +1,104 @@
+{
+  "contract_name": "SmartToken",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "recipient",
+          "type": "address"
+        },
+        {
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "depositToken",
+      "outputs": [
+        {
+          "name": "success",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "recipient",
+          "type": "address"
+        }
+      ],
+      "name": "getTokens",
+      "outputs": [
+        {
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getTime",
+      "outputs": [
+        {
+          "name": "nTime",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "_from",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "_value",
+          "type": "uint256"
+        }
+      ],
+      "name": "OnValueChanged",
+      "type": "event"
+    }
+  ],
+  "unlinked_binary": "0x60606040526000600155341561001457600080fd5b5b6101ce806100246000396000f300606060405263ffffffff7c0100000000000000000000000000000000000000000000000000000000600035041663338b5dea8114610053578063450efe2114610096578063557ed1ba146100d4575b600080fd5b341561005e57600080fd5b61008273ffffffffffffffffffffffffffffffffffffffff600435166024356100f9565b604051901515815260200160405180910390f35b34156100a157600080fd5b6100c273ffffffffffffffffffffffffffffffffffffffff6004351661016b565b60405190815260200160405180910390f35b34156100df57600080fd5b6100c2610197565b60405190815260200160405180910390f35b73ffffffffffffffffffffffffffffffffffffffff821660008181526020819052604080822080548501815560058502600155549192917f65dce515c55eb8d94c3ec733006907bb1a555ef5fb2ab7227019830d4f90a259915190815260200160405180910390a25060015b92915050565b73ffffffffffffffffffffffffffffffffffffffff81166000908152602081905260409020545b919050565b6001546103e8025b905600a165627a7a72305820401a4f2164c217e93f1c62467c9ea39f076251c9d18420b4477b5aa2482079d70029",
+  "networks": {
+    "42": {
+      "events": {
+        "0x65dce515c55eb8d94c3ec733006907bb1a555ef5fb2ab7227019830d4f90a259": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "_from",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "_value",
+              "type": "uint256"
+            }
+          ],
+          "name": "OnValueChanged",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x2eecf5943bb65a83b4a7b443f1a717bc4efdb108",
+      "updated_at": 1506806389054
+    }
+  },
+  "schema_version": "0.0.5",
+  "updated_at": 1506806389054
+}
